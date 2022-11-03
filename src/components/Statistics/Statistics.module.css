@@ -1,0 +1,30 @@
+ul {
+ list-style: none;
+ padding: 0;
+ margin: 0;
+}
+
+.list__item {
+    align-items: center;
+    display: flex;
+    font-size: 24px;
+    margin: 0;
+}
+
+.list__text {
+    margin: 0;
+    padding: 5px 10px 5px 0;
+}
+
+.list__text::first-letter {
+    text-transform: capitalize;
+}
+
+.list__value {
+    font-weight: 500;
+    padding: 0;
+}
+
+.list__item:last-child > .list__value::after {
+    content: "%";
+}
